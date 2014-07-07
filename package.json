@@ -1,5 +1,5 @@
 {
-  "name": "postal.bunyan",
+  "name": "postal.lumberjack",
   "version": "0.1.0",
   "description": "Logging Adapter between Bunyan, postal.js and (optionally) autohost.",
   "main": "src/index.js",
