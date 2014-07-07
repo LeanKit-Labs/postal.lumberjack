@@ -1,8 +1,5 @@
 {
   "name": "postal.bunyan",
-  "publishConfig": {
-    "registry": "http://162.242.242.199:4873/"
-  },
   "version": "0.1.0",
   "description": "Logging Adapter between Bunyan, postal.js and (optionally) autohost.",
   "main": "src/index.js",
@@ -13,6 +10,7 @@
     "bunyan": "^0.23.1"
   },
   "devDependencies": {
+    "fs-extra": "^0.10.0",
     "mocha": "^1.20.1",
     "postal": "^0.10.1",
     "should": "^4.0.4"
@@ -20,5 +18,7 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "author": "LeanKit"
+  "author": "LeanKit",
+  "readmeFilename": "README.md",
+  "license": "MIT License - http://opensource.org/licenses/MIT"
 }

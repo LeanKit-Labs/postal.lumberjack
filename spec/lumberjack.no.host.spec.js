@@ -1,6 +1,8 @@
-/*global describe,it,before,beforeEach */
+/*global describe,it,before,beforeEach,after */
 var should = require("should"); //jshint ignore: line
 var postal = require("postal");
+var fs = require("fs-extra");
+var path = require("path");
 var slice = Array.prototype.slice;
 
 var hostStub = {
@@ -12,6 +14,11 @@ var hostStub = {
 
 describe("postal.lumberjack specs", function() {
 	var lumberjack;
+
+	after(function(done){
+		var dir = path.resolve("./log");
+		fs.remove(dir, done);
+	});
 
 	describe("when using default logging types", function(){
 		var logChannel = "log";
