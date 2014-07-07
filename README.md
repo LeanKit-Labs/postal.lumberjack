@@ -1,4 +1,4 @@
-##postal.bunyan
+##postal.lumberjack
 
 ###What is it?
 It adapts [postal](https://github.com/postaljs/postal.js) and [bunyan](https://github.com/trentm/node-bunyan) together (and optionally [autohost](https://github.com/LeanKit-Labs/autohost)), so that messages published to your selected "logging" channel in postal will be written to file(s) via bunyan, and also sent down to autohost clients (if you enable the option).
